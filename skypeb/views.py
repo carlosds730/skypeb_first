@@ -10,7 +10,7 @@ import json
 def product_list(request):
     if request.is_ajax():
         try:
-            mail = request.GET['mail']
+            mail = request.POST['mail']
 
             validate_email(mail)
 

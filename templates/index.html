@@ -30,7 +30,8 @@
 
     <!-- Countdown timer and other animations -->
     <script src="{% static 'js/ajasxSetup.js' %}"></script>
-    <script src="{% static 'js/ajasxSetup.js' %}"></script>
+
+    <link href="{% static 'css/styles.scss87ea.css' %}" type="text/css" media="all" rel="stylesheet"/>
 
 </head>
 
@@ -59,19 +60,11 @@
     <div id="counter"></div>
 
     <form action="" method="get">
+        {% csrf_token %}
         <input type="text" class="email" id="mail" name="mail" placeholder="Introduzca su e-mail aquí..." required/>
         <input type="submit" class="submit" value="Notificarme"/>
     </form>
 
-    <!-- <div class="social-media-arrow"></div> -->
-
-    <footer>
-        <ul>
-            <li><a class="facebook" href="https://www.facebook.com/huttonofficial/" target="_blank"></a></li>
-            <li><a class="instagram" href="https://instagram.com/hutton_official/" target="_blank"></a></li>
-            <li><a class="youtube" href="https://www.youtube.com/user/huttonoffical" target="_blank"></a></li>
-        </ul>
-    </footer>
 </div>
 
 </body>
@@ -98,7 +91,7 @@
         document.getElementById("email_notify_text").innerText = "Su email se ha añadido satisfactoriamente.";
 
         var mail = document.getElementById('mail');
-        var request = $.post('/add_mail/', {'mail': mail.value});
+        var request = $.post('/', {'mail': mail.value});
 
         request.done(function (data) {
             mail.value = "";
