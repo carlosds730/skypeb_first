@@ -28,6 +28,7 @@ input {
 
 #big_holder {
     text-align: center;
+    position: relative;
 }
 
 #title {
@@ -105,7 +106,7 @@ input {
 }
 
 #background_image_holder {
-    /*text-align: center;*/
+    position: relative;
     display: inline-block;
     text-align: left;
 }

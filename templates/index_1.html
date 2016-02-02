@@ -44,7 +44,7 @@
 {#<h6 id="opening">de la gran apertura</h6>#}
 <div id="big_holder">
     <div id="background_image_holder">
-        <img src="{% static 'image/Wall-SkyPeb.jpg' %}">
+        <img id="im_1" src="{% static 'image/Wall-SkyPeb.jpg' %}">
 
         <form id="the_form" action="" method="get">
             {% csrf_token %}
@@ -56,7 +56,11 @@
 
 
 </body>
-
+<script>
+    var img_heigh = document.getElementById("im_1").getBoundingClientRect()["height"]
+    var outWindowHeight = window.innerHeight
+    document.getElementById("background_image_holder").style.top = (outWindowHeight - img_heigh) / 2 - 17 + "px";
+</script>
 <script>
     $("#submit_button").hover(function () {
         $("#mail").css('border-color', '#711033');
