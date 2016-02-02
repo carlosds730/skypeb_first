@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
-    background-color: #ffffff
 }
 
 html {
@@ -4111,4 +4110,27 @@ button.close {
         margin: 0 auto;
         width: 90%;
     }
+}
+
+#main {
+    margin: 5px auto;
+    width: 98%;
+}
+
+#main_image {
+    width: 100%;
+}
+
+#the_form {
+    position: relative;
+    top: 80%;
+}
+
+.text {
+    position: absolute;
+}
+
+#big_title {
+    top: 3.3%;
+    left: 50%;
 }

@@ -55,11 +55,9 @@
 </div>
 
 <div id="main">
-
-
-    <div id="counter"></div>
-
-    <form action="" method="get">
+    <img id="main_image" src="{% static 'image/Wall-SkyPeb.jpg' %}">
+    <h1 class="text" id="big_title">SkyPeb</h1>
+    <form id="the_form" action="" method="get">
         {% csrf_token %}
         <input type="text" class="email" id="mail" name="mail" placeholder="Introduzca su e-mail aquí..." required/>
         <input type="submit" class="submit" value="Notificarme"/>
