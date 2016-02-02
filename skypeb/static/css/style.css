@@ -1,5 +1,5 @@
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 @font-face {
@@ -19,9 +19,9 @@ h1, h2, h3, h4, h5, h6 {
 
 input {
     border-radius: 5px;
-    padding: 9px 11px;
-    line-height: 19px;
-    font-size: 17px;
+    padding: 5px 11px;
+    /*line-height: 19px;*/
+    font-size: 13px;
 }
 
 #title {
@@ -69,8 +69,8 @@ input {
 
 #the_form {
     position: relative;
-    top: -79px;
-    left: 4.5%;
+    top: -64px;
+    /*left: 4.5%;*/
 }
 
 #submit_button {
@@ -91,8 +91,13 @@ input {
     /*border: 1px solid #FCDDAC;*/
     border: 1px solid #A79579;
     transition: border-color 0.5s ease-in-out, color 0.2s ease-in-out;
+    width: 92px;
 }
 
-#mail:hover{
-    border-color:#711033;
+#mail:hover {
+    border-color: #711033;
+}
+
+#background_image_holder {
+    text-align: center;
 }
