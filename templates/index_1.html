@@ -42,14 +42,16 @@
 {#<h6 class="accesorios" id="ac_1">fundas, protectores, cables...</h6>#}
 {#<h6 id="sus">Suscríbase y entérese</h6>#}
 {#<h6 id="opening">de la gran apertura</h6>#}
-<div id="background_image_holder">
-    <img src="{% static 'image/Wall-SkyPeb.jpg' %}">
+<div id="big_holder">
+    <div id="background_image_holder">
+        <img src="{% static 'image/Wall-SkyPeb.jpg' %}">
 
-    <form id="the_form" action="" method="get">
-        {% csrf_token %}
-        <input type="text" class="email" id="mail" name="mail" placeholder="E-mail" required/>
-        <input type="submit" class="submit" id="submit_button" value="Suscribirse"/>
-    </form>
+        <form id="the_form" action="" method="get">
+            {% csrf_token %}
+            <input type="text" class="email" id="mail" name="mail" placeholder="E-mail" required/>
+            <input type="submit" class="submit" id="submit_button" value="Suscribirse"/>
+        </form>
+    </div>
 </div>
 
 

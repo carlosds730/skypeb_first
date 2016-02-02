@@ -1,5 +1,6 @@
 img {
     max-width: 100%;
+    box-shadow: 10px 5px 5px #1E050B;
 }
 
 @font-face {
@@ -10,6 +11,7 @@ img {
 
 body {
     font-family: "Trajan Pro Regular";
+    background-color: #38030B;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +24,10 @@ input {
     padding: 5px 11px;
     /*line-height: 19px;*/
     font-size: 13px;
+}
+
+#big_holder {
+    text-align: center;
 }
 
 #title {
@@ -70,7 +76,7 @@ input {
 #the_form {
     position: relative;
     top: -64px;
-    /*left: 4.5%;*/
+    left: 24px;
 }
 
 #submit_button {
@@ -99,5 +105,7 @@ input {
 }
 
 #background_image_holder {
-    text-align: center;
+    /*text-align: center;*/
+    display: inline-block;
+    text-align: left;
 }
