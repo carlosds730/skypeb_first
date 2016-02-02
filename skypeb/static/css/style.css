@@ -1,3 +1,98 @@
-img{
+img {
     width: 100%;
+}
+
+@font-face {
+    font-family: 'Trajan Pro Regular';
+    src: url('../fonts/Trajan%20Pro%20Regular.ttf') format('truetype');
+
+}
+
+body {
+    font-family: "Trajan Pro Regular";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: absolute;
+    color: #711033;
+}
+
+input {
+    border-radius: 5px;
+    padding: 9px 11px;
+    line-height: 19px;
+    font-size: 17px;
+}
+
+#title {
+    left: 50%;
+    top: -10%;
+    font-size: 9rem;
+}
+
+#prox {
+    left: 5.5%;
+    top: 21.4%;
+    font-size: 3.2rem;
+}
+
+#shop {
+    left: 1.8%;
+    top: 27.4%;
+    font-size: 3.5rem;
+}
+
+.accesorios {
+    left: 3.1%;
+    font-size: 2.09rem;
+}
+
+#ac {
+    top: 56.4%;
+}
+
+#ac_1 {
+    top: 60.8%;
+}
+
+#sus {
+    left: 2.9%;
+    top: 64.5%;
+    font-size: 2.75rem;
+}
+
+#opening {
+    left: 6.5%;
+    top: 72.4%;
+    font-size: 2.13rem;
+}
+
+#the_form {
+    position: absolute;
+    top: 87%;
+    left: 7.5%;
+}
+
+#submit_button {
+    background-color: #711033;
+    color: white;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 1px solid #711033;
+}
+
+#submit_button:hover {
+    background-color: white;
+    color: #711033;
+    cursor: pointer;
+}
+
+#mail {
+    /*border: 1px solid #FCDDAC;*/
+    border: 1px solid #A79579;
+    transition: border-color 0.5s ease-in-out, color 0.2s ease-in-out;
+}
+
+#mail:hover{
+    border-color:#711033;
 }
