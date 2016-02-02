@@ -68,9 +68,9 @@ input {
 }
 
 #the_form {
-    position: absolute;
-    top: 87%;
-    left: 7.5%;
+    position: relative;
+    top: -79px;
+    left: 4.5%;
 }
 
 #submit_button {
