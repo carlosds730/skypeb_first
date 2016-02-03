@@ -8,13 +8,6 @@ import json
 
 
 def product_list(request):
-    if request.method == 'GET':
-        file = open('77A97ED7732495110142AE80197EBBAE.txt', mode='r+b')
-        name = '77A97ED7732495110142AE80197EBBAE.txt'
-        response = HttpResponse(file, content_type='application/txt')
-        response['Content-Disposition'] = 'attachment; filename="%s"' % name
-        return response
-
     if request.is_ajax():
         try:
             mail = request.POST['mail']
