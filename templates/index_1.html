@@ -62,12 +62,15 @@
     <div id="background_image_holder">
         <img id="im_1" src="{% static 'image/Wall-SkyPeb.jpg' %}">
 
+
         <form id="the_form" action="" method="get">
             {% csrf_token %}
             <input type="text" class="email" id="mail" name="mail" placeholder="E-mail" required/>
             <input type="submit" class="submit" id="submit_button" value="Suscribirse"/>
         </form>
-
+        <div class="pic_holder">
+            <img id="comodoro_img" src="{% static 'image/comodo_secure_100x85_transp.png' %}">
+        </div>
 
     </div>
 </div>

@@ -120,6 +120,19 @@ input {
     display: none;
 }
 
+.pic_holder {
+    position: relative;
+    top: -128px;
+    box-shadow: none;
+    text-align: right;
+}
+
+#comodoro_img {
+    box-shadow: none;
+    right: 10px;
+    position: relative;
+}
+
 @media only screen and (max-width: 470px) {
     .cell_text {
         display: block;
