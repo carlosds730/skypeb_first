@@ -27,3 +27,7 @@ def product_list(request):
 
 def google_thing(request):
     return render(request, 'google8d4d90f931ab89aa.html')
+
+
+def google_thing_1(request):
+    return render(request, 'googleef2ef230e52b5386.html')

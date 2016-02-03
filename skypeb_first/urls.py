@@ -23,6 +23,7 @@ from skypeb import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^google8d4d90f931ab89aa.html', views.google_thing, name='google_thing'),
+    url(r'^googleef2ef230e52b5386.html', views.google_thing, name='google_thing_1'),
     url(r'^$', views.product_list, name='product_list')
 ]
 
