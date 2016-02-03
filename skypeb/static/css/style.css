@@ -15,7 +15,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    position: absolute;
     color: #711033;
 }
 
@@ -29,6 +28,12 @@ input {
 #big_holder {
     text-align: center;
     position: relative;
+}
+
+#big_holder:after {
+    content: ' ';
+    clear: both;
+    display: block;
 }
 
 #title {
@@ -63,14 +68,14 @@ input {
 }
 
 #sus {
-    left: 2.9%;
-    top: 64.5%;
+    /*left: 2.9%;*/
+    /*top: 64.5%;*/
     font-size: 2.75rem;
 }
 
 #opening {
-    left: 6.5%;
-    top: 72.4%;
+    /*left: 6.5%;*/
+    /*top: 72.4%;*/
     font-size: 2.13rem;
 }
 
@@ -110,3 +115,15 @@ input {
     display: inline-block;
     text-align: left;
 }
+
+.cell_text {
+    display: none;
+}
+
+@media only screen and (max-width: 470px) {
+    .cell_text {
+        display: block;
+    }
+
+}
+

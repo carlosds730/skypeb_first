@@ -5,7 +5,6 @@
 <head>
     <meta charset="utf-8"/>
 
-    <!-- TODO: Anhadir las keywords -->
     <meta name="keywords" content="{{ keywords }}"/>
 
     <title>SkyPeb</title>
@@ -40,26 +39,33 @@
 {#<h5 id="shop">COMPRAS ONLINE</h5>#}
 {#<h6 class="accesorios" id="ac">accesorios para smartphones</h6>#}
 {#<h6 class="accesorios" id="ac_1">fundas, protectores, cables...</h6>#}
-{#<h6 id="sus">Suscríbase y entérese</h6>#}
-{#<h6 id="opening">de la gran apertura</h6>#}
+
 <div id="big_holder">
     <div id="background_image_holder">
         <img id="im_1" src="{% static 'image/Wall-SkyPeb.jpg' %}">
-
         <form id="the_form" action="" method="get">
             {% csrf_token %}
             <input type="text" class="email" id="mail" name="mail" placeholder="E-mail" required/>
             <input type="submit" class="submit" id="submit_button" value="Suscribirse"/>
         </form>
+
+
     </div>
 </div>
 
 
 </body>
 <script>
-    var img_heigh = document.getElementById("im_1").getBoundingClientRect()["height"]
-    var outWindowHeight = window.innerHeight
-    document.getElementById("background_image_holder").style.top = (outWindowHeight - img_heigh) / 2 - 17 + "px";
+    function centerPic() {
+        var img_heigh = document.getElementById("im_1").getBoundingClientRect()["height"]
+        var outWindowHeight = window.innerHeight
+        document.getElementById("background_image_holder").style.top = (outWindowHeight - img_heigh) / 2 - 17 + "px";
+    }
+
+    centerPic();
+
+    window.addEventListener("resize", centerPic, false);
+
 </script>
 <script>
     $("#submit_button").hover(function () {
