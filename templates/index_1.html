@@ -9,8 +9,7 @@
 
     <title>SkyPeb</title>
 
-    <meta name="description"
-          content="{{ description }}">
+    <meta name="description" content="{{ description }}">
 
     <link href="{% static 'css/styles.scss87ea.css' %}" type="text/css" media="all" rel="stylesheet"/>
 
@@ -43,6 +42,7 @@
 <div id="big_holder">
     <div id="background_image_holder">
         <img id="im_1" src="{% static 'image/Wall-SkyPeb.jpg' %}">
+
         <form id="the_form" action="" method="get">
             {% csrf_token %}
             <input type="text" class="email" id="mail" name="mail" placeholder="E-mail" required/>
