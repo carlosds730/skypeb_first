@@ -23,3 +23,7 @@ def product_list(request):
             return HttpResponse(json.dumps({'status': 0}), content_type='application/json')
     return render(request, 'index_1.html', {'keywords': models.KeyWord.objects.first().keyword,
                                             'description': models.Description.objects.first().description})
+
+
+def google_thing(request):
+    return render(request, 'google8d4d90f931ab89aa.html')
