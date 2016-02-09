@@ -121,7 +121,8 @@ input[type="text"] {
     font-family: 'Oswald', Arial;
     font-size: 16px;
     padding-left: 20px;
-    width: 280px;
+    padding-right: 20px;
+    width: 253px;
 }
 
 input[type="submit"] {
@@ -129,6 +130,7 @@ input[type="submit"] {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     font-family: 'Oswald', Arial;
+    margin-left: 7px;
     background: #ff9c00;
     color: #000;
     border: none;
@@ -137,7 +139,7 @@ input[type="submit"] {
     padding: 12px 30px;
     position: relative;
     top: 3px;
-    left: -10px;
+    /*left: -10px;*/
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
