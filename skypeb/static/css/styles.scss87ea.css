@@ -3351,7 +3351,7 @@ button.close {
         position: fixed;
         display: none;
         width: 90%;
-        bottom: 15px;
+        bottom: 40%;
         left: 5%;
         z-index: 10000;
     }
