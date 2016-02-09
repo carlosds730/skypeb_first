@@ -110,8 +110,8 @@ form {
 
 input[type="text"] {
     border-radius: 5px;
-    /*-webkit-border-radius: 5px;*/
-    /*-moz-border-radius: 5px;*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     background: rgba(255, 255, 255, .1);
     -webkit-background-clip: padding-box !important;
     background-clip: padding-box !important;
