@@ -21,7 +21,7 @@ def product_list(request):
             return HttpResponse(json.dumps({'status': 0}), content_type='application/json')
         except Exception as ee:
             return HttpResponse(json.dumps({'status': 0}), content_type='application/json')
-    return render(request, 'index_1.html', {'keywords': models.KeyWord.objects.first().keyword,
+    return render(request, 'index.html', {'keywords': models.KeyWord.objects.first().keyword,
                                             'description': models.Description.objects.first().description})
 
 
