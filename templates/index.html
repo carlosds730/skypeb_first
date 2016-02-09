@@ -29,10 +29,15 @@
           content="https://www.slimpeb.com/static/image/Wall-SkyPeb_1.jpg">
 
     <!--CSS-->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.scss87ea.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-light.css' %}">
-    <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/ajasxSetup.js' %}"></script>
+    {#    <script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>#}
 
 </head>
 
@@ -147,7 +152,7 @@
 <!--/WRAP-->
 
 </body>
-<script src="{% static 'js/ajasxSetup.js' %}"></script>
+
 <script>
     function Close(num) {
         if (num == 1)
