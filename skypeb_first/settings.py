@@ -121,3 +121,21 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Production mode
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Develop mode
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+
+# EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'emails')  # change this to a proper location
+
+EMAIL_HOST = 'mail.towpeb.com'
+
+EMAIL_HOST_USER = 'slimpeb_info@towpeb.com'
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_PASSWORD = 'conv3rs3'
